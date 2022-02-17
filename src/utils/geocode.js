@@ -22,3 +22,25 @@ const geocode = (address, callback) => {
 
 module.exports = geocode;
 
+
+// function one(callback){
+//    setTimeout(()=>{
+//        console.log('Function 1 completed');
+//        callback();
+//    },3000)
+   
+// }
+// function two(callback){
+//    setTimeout(()=>{
+//     console.log('I am second function')
+//     callback();
+//    },4000)
+// }
+// function three(){
+//     console.log('i am third function')
+// }
+// function run(){
+//     one(two)
+//     two(three)
+// }
+// run()

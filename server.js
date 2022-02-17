@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./src/utils/geocode')
 const forecast = require('./src/utils/forcast')
 const app=express()
+const port=process.env.PORT||3000
 //setup paths for express config
 const directory=path.join(__dirname, '../Express/public')
 const viewPath=path.join(__dirname,'./templates/views')
@@ -78,7 +79,7 @@ app.get('*',(req,res)=>{
     })
    
 })
-app.listen(3000)
+app.listen(port)
 // app.get("/contact",(req,res)=>{
 //     res.send({//json Object
 //         name:"Rafia",
